@@ -13,7 +13,7 @@
         <!--Snapchat-->
         <scene sceneID="n0T-xY-suC">
             <objects>
-                <viewController id="1gN-BH-GbE" customClass="LoginViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1gN-BH-GbE" customClass="AuthViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fa8-Bi-ryZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68I-ik-0Wc">
                                 <rect key="frame" x="168" y="201.5" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="topTapped:" destination="1gN-BH-GbE" eventType="touchUpInside" id="Wkp-Dv-gDO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-Fo-3P5">
                                 <rect key="frame" x="179.5" y="251.5" width="16" height="21"/>
@@ -49,6 +52,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOI-Bd-dKk">
                                 <rect key="frame" x="126" y="292.5" width="122" height="30"/>
                                 <state key="normal" title="Switch to Sign Up"/>
+                                <connections>
+                                    <action selector="bottomTapped:" destination="1gN-BH-GbE" eventType="touchUpInside" id="i2c-KH-63C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,6 +79,12 @@
                         <viewLayoutGuide key="safeArea" id="Dxo-1X-con"/>
                     </view>
                     <navigationItem key="navigationItem" title="Snapchat" id="gJO-HG-NjP"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="QOI-Bd-dKk" id="AQa-gg-wSt"/>
+                        <outlet property="emailTextField" destination="jrQ-Pw-zlF" id="AbV-ky-TDW"/>
+                        <outlet property="passwordTextField" destination="jpn-Ke-01c" id="Xye-b7-pex"/>
+                        <outlet property="topButton" destination="68I-ik-0Wc" id="uOl-6l-x43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKp-rI-4G3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
