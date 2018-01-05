@@ -14,6 +14,7 @@
 		200BC90B1FFD9F88006F591D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */; };
 		200BC90D1FFEFA83006F591D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC90C1FFEFA82006F591D /* AuthViewController.swift */; };
 		20CECB992000085600BF0A0D /* SnapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CECB982000085600BF0A0D /* SnapsTableViewController.swift */; };
+		20CECB9B2000139E00BF0A0D /* AddImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CECB9A2000139E00BF0A0D /* AddImageViewController.swift */; };
 		ECFAF53B74B4F47DBF1F026B /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDA59E3A72648C7733FAFD /* Pods_Snapchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		200BC90C1FFEFA82006F591D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = /Users/mariano.echegoyen/dev/2017/Udemy/Snapchat/Snapchat/AuthViewController.swift; sourceTree = "<absolute>"; };
 		20CECB982000085600BF0A0D /* SnapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsTableViewController.swift; sourceTree = "<group>"; };
+		20CECB9A2000139E00BF0A0D /* AddImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageViewController.swift; sourceTree = "<group>"; };
 		6701FFE75B01AD4EA5AC8475 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		67E31A9026C34F89F6C3E02A /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 		B4CDA59E3A72648C7733FAFD /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				200BC8F81FFD9E43006F591D /* AppDelegate.swift */,
 				200BC90C1FFEFA82006F591D /* AuthViewController.swift */,
 				20CECB982000085600BF0A0D /* SnapsTableViewController.swift */,
+				20CECB9A2000139E00BF0A0D /* AddImageViewController.swift */,
 				200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */,
 				200BC8FC1FFD9E43006F591D /* Main.storyboard */,
 				200BC8FF1FFD9E43006F591D /* Assets.xcassets */,
@@ -228,6 +231,7 @@
 			files = (
 				20CECB992000085600BF0A0D /* SnapsTableViewController.swift in Sources */,
 				200BC90D1FFEFA83006F591D /* AuthViewController.swift in Sources */,
+				20CECB9B2000139E00BF0A0D /* AddImageViewController.swift in Sources */,
 				200BC8F91FFD9E43006F591D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

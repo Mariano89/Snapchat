@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -115,17 +117,87 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Snaps" id="ORA-fy-69x">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YKk-u2-Q0Y"/>
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Djj-dW-7jT">
                             <connections>
                                 <action selector="logoutTapped:" destination="H58-J7-cPL" id="dfO-dx-2tl"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kZD-cY-q58"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kZD-cY-q58">
+                            <connections>
+                                <segue destination="MXU-d5-7cf" kind="show" id="uev-ui-uVV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AlR-M7-GMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1303" y="131"/>
+        </scene>
+        <!--Add an Image-->
+        <scene sceneID="f7u-VM-qXE">
+            <objects>
+                <viewController id="MXU-d5-7cf" customClass="AddImageViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKg-gS-gv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="uIH-Cz-EHc">
+                                <rect key="frame" x="0.0" y="74" width="375" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uIH-Cz-EHc" secondAttribute="height" multiplier="375:233" id="Jc9-i6-BJF"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-P3-OCu">
+                                <rect key="frame" x="10" y="322" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM9-pW-tlm">
+                                <rect key="frame" x="171" y="372" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="MXU-d5-7cf" eventType="touchUpInside" id="k2C-wg-ke5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uIH-Cz-EHc" firstAttribute="top" secondItem="Bo3-hl-jq8" secondAttribute="top" constant="10" id="5AG-Lp-nVv"/>
+                            <constraint firstItem="4ag-P3-OCu" firstAttribute="leading" secondItem="Bo3-hl-jq8" secondAttribute="leading" constant="10" id="D1m-bC-uEl"/>
+                            <constraint firstItem="Bo3-hl-jq8" firstAttribute="trailing" secondItem="uIH-Cz-EHc" secondAttribute="trailing" id="MSe-3F-PZs"/>
+                            <constraint firstItem="AM9-pW-tlm" firstAttribute="centerX" secondItem="fKg-gS-gv3" secondAttribute="centerX" id="dCf-hy-Aad"/>
+                            <constraint firstItem="Bo3-hl-jq8" firstAttribute="trailing" secondItem="4ag-P3-OCu" secondAttribute="trailing" constant="10" id="e0g-qj-Ey1"/>
+                            <constraint firstItem="uIH-Cz-EHc" firstAttribute="leading" secondItem="Bo3-hl-jq8" secondAttribute="leading" id="fec-Xc-jOS"/>
+                            <constraint firstItem="4ag-P3-OCu" firstAttribute="centerX" secondItem="fKg-gS-gv3" secondAttribute="centerX" id="qrr-HT-8Os"/>
+                            <constraint firstItem="4ag-P3-OCu" firstAttribute="top" secondItem="uIH-Cz-EHc" secondAttribute="bottom" constant="15" id="wai-8o-8gb"/>
+                            <constraint firstItem="AM9-pW-tlm" firstAttribute="top" secondItem="4ag-P3-OCu" secondAttribute="bottom" constant="20" id="y9l-4H-XU5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bo3-hl-jq8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add an Image" id="n4i-hO-2Pc">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="g8L-ds-8xw">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="MXU-d5-7cf" id="ghD-wX-8Tg"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="UG0-k6-AsQ">
+                                <connections>
+                                    <action selector="photosTapped:" destination="MXU-d5-7cf" id="vmE-1b-WGu"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="4ag-P3-OCu" id="nUF-aa-Xea"/>
+                        <outlet property="imageView" destination="uIH-Cz-EHc" id="qBn-Ue-dyD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdh-tC-P0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2080.8000000000002" y="130.88455772113943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HXA-PL-sfe">
@@ -144,4 +216,7 @@
             <point key="canvasLocation" x="524" y="131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="picture" width="512" height="512"/>
+    </resources>
 </document>
