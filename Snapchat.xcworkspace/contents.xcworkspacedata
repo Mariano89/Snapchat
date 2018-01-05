@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/mariano.echegoyen/dev/2017/Udemy/Snapchat/Snapchat/LoginViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Snapchat.xcodeproj">
    </FileRef>
    <FileRef

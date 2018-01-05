@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		200BC8F91FFD9E43006F591D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC8F81FFD9E43006F591D /* AppDelegate.swift */; };
-		200BC8FB1FFD9E43006F591D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC8FA1FFD9E43006F591D /* ViewController.swift */; };
 		200BC8FE1FFD9E43006F591D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200BC8FC1FFD9E43006F591D /* Main.storyboard */; };
 		200BC9001FFD9E43006F591D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200BC8FF1FFD9E43006F591D /* Assets.xcassets */; };
 		200BC9031FFD9E43006F591D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200BC9011FFD9E43006F591D /* LaunchScreen.storyboard */; };
 		200BC90B1FFD9F88006F591D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */; };
+		200BC90D1FFEFA83006F591D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC90C1FFEFA82006F591D /* LoginViewController.swift */; };
 		ECFAF53B74B4F47DBF1F026B /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDA59E3A72648C7733FAFD /* Pods_Snapchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		200BC8F51FFD9E43006F591D /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		200BC8F81FFD9E43006F591D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		200BC8FA1FFD9E43006F591D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		200BC8FD1FFD9E43006F591D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		200BC8FF1FFD9E43006F591D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		200BC9021FFD9E43006F591D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		200BC9041FFD9E43006F591D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		200BC90C1FFEFA82006F591D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/mariano.echegoyen/dev/2017/Udemy/Snapchat/Snapchat/LoginViewController.swift; sourceTree = "<absolute>"; };
 		6701FFE75B01AD4EA5AC8475 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		67E31A9026C34F89F6C3E02A /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 		B4CDA59E3A72648C7733FAFD /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				200BC8F81FFD9E43006F591D /* AppDelegate.swift */,
-				200BC8FA1FFD9E43006F591D /* ViewController.swift */,
+				200BC90C1FFEFA82006F591D /* LoginViewController.swift */,
 				200BC90A1FFD9F87006F591D /* GoogleService-Info.plist */,
 				200BC8FC1FFD9E43006F591D /* Main.storyboard */,
 				200BC8FF1FFD9E43006F591D /* Assets.xcassets */,
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				200BC8FB1FFD9E43006F591D /* ViewController.swift in Sources */,
+				200BC90D1FFEFA83006F591D /* LoginViewController.swift in Sources */,
 				200BC8F91FFD9E43006F591D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
