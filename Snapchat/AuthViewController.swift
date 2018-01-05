@@ -29,6 +29,14 @@ class AuthViewController: UIViewController {
                 
                 if loginMode {
                     // Login
+                    Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                        if let error = error {
+                            print(error)
+                        } else {
+                            print("Login successful")
+                            self.performSegue(withIdentifier: "authToSnaps", sender: nil)
+                        }
+                    })
                 } else {
                     // Sign Up
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -36,6 +44,7 @@ class AuthViewController: UIViewController {
                             print(error)
                         } else {
                             print("Sign up successful")
+                            self.performSegue(withIdentifier: "authToSnaps", sender: nil)
                         }
                     })
                 }
